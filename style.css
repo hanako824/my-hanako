@@ -58,13 +58,13 @@ header{
 .firstlook-nav-container{
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 470px;
     display: flex;
     justify-content: center;
     transform: translateY(-50%);
 }
 .firstlook-nav-row{
-    width: 80%;
+    width: 90%;
     height: 100%;
 }
 .firstlook-nav-col{
@@ -73,11 +73,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .firstlook-nav-col-item{
     width: 90%;
     height: 100%;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 .firstlook-nav-col-item-img{
     width: 100%;
@@ -89,27 +93,127 @@ header{
     object-fit: cover;
     border-radius: 10px;
 }
+.firstlook-nav-col-glass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(80, 80, 80, .3);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    transform: translateY(100%);
+    transition: all .4s ease;
+    display: flex;
+    justify-content: center;
+}
+.firstlook-nav-col-glass-i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+.firstlook-nav-col-item:hover .firstlook-nav-col-glass{
+    transform: translateY(0);
+}
+.firstlook-nav-col-item:hover .firstlook-nav-col-item-title{
+    opacity: 0;
+}
+.firstlook-nav-col-item-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(220, 220, 220);
+    font-size: 20px;
+    padding: .5rem;
+    transition: all .4s ease;
+}
 .wrapper{
     width: 100%;
     height: 500px;
-    /* background: pink; */
+    background: pink;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RES */
 @media screen and (max-width: 1550px) {
     .firstlook-nav-row{
-        width: 85%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1350px) {
-    .firstlook-nav-row{
-        width: 90%;
+    .firstlook-nav-container{
+        height: 450px;
     }
 }
-@media screen and (max-width: 1250px) {
-    .firstlook-nav-row{
-        width: 100%;
+@media screen and (max-width: 1200px) {
+    .firstlook-nav-container{
+        height: 430px;
     }
 }
 @media screen and (max-width: 991px) {
