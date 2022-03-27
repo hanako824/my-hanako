@@ -6,49 +6,6 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     cursor: default;
 }
-.background{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 130px);
-    z-index: 1;
-}
-.background img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.title{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.title-big{
-    margin: 0 0 0 5rem;
-    font-size: 40px;
-    font-weight: 700;
-    color: #272443;
-}
-.title-small{
-    margin: 0 0 1rem 5rem;
-    font-size: 32px;
-    font-weight: 500;
-    color: #272443;
-}
-.title-link{
-    margin: 0 0 0 3rem;
-    display: flex;
-}
-.title-link-item{
-    margin: 0 2rem 5rem 2rem;
-    font-size: 40px;
-    cursor: pointer;
-}
 header{
     position: fixed;
     top: 0;
@@ -76,260 +33,118 @@ header{
     margin: 0 2rem 0 2rem;
     cursor: pointer;
 }
-.nav{
+.firstlook{
+    width: 100%;
+    height: 100vh;
+}
+.firstlook-container{
+    width: 100%;
+    height: 100%;
+}
+.firstlook-background{
+    width: 100%;
+    height: 70%;
+}
+.firstlook-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.firstlook-nav{
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.firstlook-nav-container{
     position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 400px;
-    z-index: 2;
-}
-.nav-container{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
+    transform: translateY(-50%);
 }
-.nav-row{
-    width: 95%;
+.firstlook-nav-row{
+    width: 80%;
     height: 100%;
 }
-.nav-item{
-    height: 550px;
-    border-radius: 10px;
+.firstlook-nav-col{
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    /* background: red; */
-    padding: 2rem 2rem 2rem 2rem !important;
 }
-.nav-item-container{
+.firstlook-nav-col-item{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
+.firstlook-nav-col-item-img{
     width: 100%;
     height: 100%;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
 }
-.nav-item-container img{
+.firstlook-nav-col-item-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.nav-item-title{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: .5rem;
-    letter-spacing: 2px;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all .6s ease;
-}
-.nav-arrow{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgb(100, 100, 100, .2);
-    transform: translateY(100%);
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 30px;
-    transition: all .4s ease;
-}
-.nav-arrow-i{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.nav-item-container:hover .nav-arrow{
-    transform: translateY(0);
-}
-.nav-item-container:hover .nav-item-title{
-    opacity: 0;
-}
 .wrapper{
-    position: absolute;
-    top: 1100px;
-    left: 0;
     width: 100%;
-    height: 700px;
-    background: pink;
+    height: 500px;
+    /* background: pink; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* RES */
-@media screen and (max-width: 1600px) {
-    .nav-item{
-        height: 530px;
-    }
-    .wrapper{
-        top: 1080px;
+@media screen and (max-width: 1550px) {
+    .firstlook-nav-row{
+        width: 85%;
     }
 }
-@media screen and (max-width: 1500px) {
-    .background{
-        height: calc(100vh - 150px);
-    }
-    .nav-item{
-        height: 500px;
-    }
-    .wrapper{
-        top: 1050px;
+@media screen and (max-width: 1350px) {
+    .firstlook-nav-row{
+        width: 90%;
     }
 }
-@media screen and (max-width: 1400px) {
-    .background{
-        height: calc(100vh - 180px);
-    }
-    .nav-item{
-        height: 470px;
-    }
-    .wrapper{
-        top: 1020px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .background{
-        height: calc(100vh - 200px);
-    }
-    .nav-item{
-        height: 450px;
-    }
-    .wrapper{
-        top: 1000px;
-    }
-}
-@media screen and (max-width: 1150px) {
-    .nav-item{
-        height: 400px;
-    }
-    .wrapper{
-        top: 950px;
+@media screen and (max-width: 1250px) {
+    .firstlook-nav-row{
+        width: 100%;
     }
 }
 @media screen and (max-width: 991px) {
-    .background{
-        height: calc(100vh - 150px);
+    .firstlook-nav-container{
+        transform: translateY(-55%);
     }
-    .nav-item{
-        height: 450px;
+    .firstlook-nav-col{
+        height: 55%;
     }
-    .nav-item-container{
-        width: 300px;
-        height: 400px;
-    }
-    .wrapper{
-        top: 1460px;
+    .firstlook-nav-col-item{
+        width: 90%;
+        height: 90%;
     }
 }
-@media screen and (max-width: 765px) {
-    .background{
-        height: calc(100vh - 130px);
+@media screen and (max-width: 576px) {
+    .firstlook-nav-container{
+        transform: translateY(-85%);
     }
-    .nav-item{
-        height: 450px;
-    }
-    .nav-item-container{
-        width: 330px;
-        height: 430px;
+    .firstlook-nav-col-item{
+        width: 95%;
     }
     .wrapper{
-        top: 2400px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .title-big{
-        font-size: 30px;
-    }
-    .title-small{
-        font-size: 25px;
-        margin: 0 0 .5rem 5rem;
-    }
-    .title-link i{
-        font-size: 30px;
+        transform: translateY(65%);
     }
 }
 @media screen and (max-width: 550px) {
     .header-nav-item{
         margin: 0 1rem 0 1rem;
-        cursor: pointer;
     }
 }
-@media screen and (max-width: 500px) {
-    .background{
-        height: calc(100vh - 320px);
-    }
-    .nav{
-        height: 550px;
-    }
-    .nav-item{
-        height: 410px;
-        padding: 1rem 1rem 1rem 1rem !important;
-    }
-    .nav-item-container{
-        width: 100%;
-        height: 400px;
-    }
+@media screen and (max-width: 499px) {
     .header-logo{
-        margin: 0 0 0 .5rem;
-    }
-    .title{
-        justify-content: center;
-    }
-    .title-big{
-        font-size: 27px;
-        margin: 0 0 0 0;
-        text-align: center;
-    }
-    .title-small{
-        font-size: 22px;
-        margin: 0 0 1rem 0;
-        text-align: center;
-    }
-    .title-link i{
-        font-size: 27px;
-        margin: 0 0 0 0;
-        text-align: center;
+        margin: 0 0 0 1rem;
     }
     .header-nav-item{
         margin: 0 .5rem 0 .5rem;
-        cursor: pointer;
-    }
-    .wrapper{
-        top: 2100px;
     }
 }
