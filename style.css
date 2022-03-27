@@ -236,7 +236,7 @@ header{
         width: 95%;
     }
     .wrapper{
-        transform: translateY(65%);
+        transform: translateY(70%);
     }
 }
 @media screen and (max-width: 550px) {
